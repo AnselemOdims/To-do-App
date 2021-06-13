@@ -3,26 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <title>To-Do App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="modal.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fe0a3092c6.js" crossorigin="anonymous" defer></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header>
       <nav id="navbar">
+        <div>
+        <i class="fas fa-th-list"></i>
         <a href="" class="nav-brand">Skedule</a>
+      </div>
         <ul>
           <li class="nav-item"><a href="about.html">About us</a></li>
-          <li><a href="" class="nav-item btn btn-default">Login</a></li>
+          <li><a href=""  id="myBtn1" class="nav-item btn btn-default ">Login</a></li>
         </ul>
       </nav>
     </header>
-    <main class="container" id="main">
+    <main  >
         <section class="hero">
             <div class="hero-card">
                 <h1>Lots of Tasks to Handle?</h1>
                 <h2>We've got you covered</h2>
                 <p>Your all-in-one to-do list, reminder and habit tracker on one page</p>
-                <a href="" class="btn hero-btn">Register</a>
+                <a href="" id="myBtn2"class="btn hero-btn ">Get Started for Free</a>
             </div>
             <div class="hero-img">
             <img src="img/43029.jpg">
@@ -34,7 +40,7 @@
           <h3>To-do List, Habit Tracker and daily reminder on a single screen</h3>
         </div>
         <div class="card-container">
-          <div class="card">
+          <div class="cards">
             <div class="card-hd">
             <p>Tasks</p>
             <i class="fas fa-check-double"></i>
@@ -42,7 +48,7 @@
             <hr class="new-hr">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget vulputate tellus, et consequat elit. Nulla libero ipsum, commodo vitae urna a, icitudin vulputate urna. Nullam dapibus gravida urna ullamcorper molestie.  </p>
           </div>
-          <div class="card">
+          <div class="cards">
             <div class="card-hd">
             <p>Habits</p>
             <i class="fas fa-check-double"></i>
@@ -50,7 +56,7 @@
           <hr class="new-hr">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget vulputate tellus, et consequat elit. Nulla libero ipsum, commodo vitae urna a, icitudin vulputate urna. Nullam dapibus gravida urna ullamcorper molestie.  </p>
           </div>
-          <div class="card">
+          <div class="cards">
             <div class="card-hd">
             <p>Multiple Editing</p>
             <i class="fas fa-check-double"></i>
@@ -60,7 +66,7 @@
           </div>
         </div>
         <div class="card-container">
-          <div class="card">
+          <div class="cards">
             <div class="card-hd">
             <p>Shopping List</p>
             <i class="fas fa-check-double"></i>
@@ -68,7 +74,7 @@
           <hr class="new-hr">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget vulputate tellus, et consequat elit. Nulla libero ipsum, commodo vitae urna a, icitudin vulputate urna. Nullam dapibus gravida urna ullamcorper molestie.  </p>
           </div>
-          <div class="card">
+          <div class="cards">
             <div class="card-hd">
             <p>Daily Reminder</p>
             <i class="fas fa-check-double"></i>
@@ -78,6 +84,84 @@
           </div>
         </div>
         </section>
+
+      <div id="myModal1" class="modal modal-log">
+        <!-- Modal content -->
+        <div class="modal-content ">
+          <img src="img/28518.jpg" id="mod-img">
+          <!-- <span class="closer">&times;</span> -->
+          <div class="modal-d">
+          <div class="modal-header">
+            
+            <h3>Login </h3>
+            <span class="closer">&times;</span>
+          </div>
+          <!-- <hr> -->
+          <div class="modal-body">
+         
+              <form>
+   <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@gmail.com" aria-describedby="emailHelp">
+                   
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                 
+                    <a href=""  id="myBtn1" class="nav-item btn btn-default myBtn1">Login</a>
+                    <p>Not a User? <a href="">Register here</a></p>
+                </form>
+                </div>
+              </div>
+                </div>
+                </div>
+                <div id="myModal2" class="modal">
+                  
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                   
+                      <img src="img/28518.jpg">
+                    
+                    <!-- <span class="closer">&times;</span> -->
+                    <div class="modal-d">
+                    <div class="modal-header">
+                      
+                      <h3>Join us</h3>
+                      <div class="closer">
+                      <span >&times;</span>
+                    </div>
+                    </div>
+                  
+                    <div class="modal-body">
+               
+                      <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">First Name</label>
+                            <input class="form-control" type="text" placeholder="Your First Name" aria-label="default input example">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                            <input class="form-control" type="text" placeholder="Your Last Name" aria-label="default input example">
+                          </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@gmail.com" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*************">
+                        </div>
+                        
+                          <a href=""  id="myBtn1" class="nav-item btn btn-default myBtn1">Register</a>
+                        <p>Already a User? <a href=""  id="user"  >Login</a></p>
+                      </form>
+                          </div>
+                        </div>
+                  </div>
+              </div>  
         
     </main>
     <footer id="footer-wrapper">
